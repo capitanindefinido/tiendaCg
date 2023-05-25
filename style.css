@@ -1,0 +1,62 @@
+.imgProductos {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-top: 1rem;
+    background-color: #dee5e5;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+    background-color: #190b27;
+}
+
+.colorBoton {
+    color: white;
+    background-color: #47250e;
+}
+
+.colorBoton:hover {
+    background-color: #17B890;
+    color: white;
+}
+
+.container {
+    background-color: #5e807f;
+    background-image: url("img/IMG_1229.jpg");
+    background-size: cover;
+    background-position-x: center;
+}
+
+
+.form-label {
+    color: #dee5e5;
+}
+
+#titulo {
+    color: #030102;
+    font-family: "imp";
+}
+
+hr {
+    color: #dee5e5;
+}
+
+h5 {
+    color: white;
+}
+
+h3 {
+    display: none;
+}
+
+p {
+    color: white;
+}
+
+.img-fluid {
+    width: auto;
+    position: relative;
+}

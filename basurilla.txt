@@ -1,0 +1,117 @@
+
+
+/* const contenedorPago = document.getElementById("contenedorPago");
+
+const pagar = document.getElementById("pagar");
+
+pagar.addEventListener("click", () => {
+    pagarCarrito();
+})
+ */
+/* //Función para pagar el carrito de compras: 
+let open = false;
+const pagarCarrito = () => {
+    if (open === false) {
+        const card = document.createElement("div");
+        card.classList.add("col-xl-3", "col-md-6", "col-xs-12");
+        card.innerHTML = `
+                        <form class="row g-3">
+                            <div class="col-md-6">
+                            <label for="inputEmail4" class="form-label">Nombre</label>
+                            <input type="email" class="form-control" id="inputEmail4">
+                            </div>
+                            <div class="col-md-6">
+                            <label for="inputPassword4" class="form-label">Apellido</label>
+                            <input type="password" class="form-control" id="inputPassword4">
+                            </div>
+                            <div class="col-12">
+                            <label for="inputAddress" class="form-label">Dirección</label>
+                            <input type="text" class="form-control" id="inputAddress" >
+                            </div>
+                            <div class="col-12">
+                            <label for="inputAddress2" class="form-label">Teléfono</label>
+                            <input type="text" class="form-control" id="inputAddress2" >
+                            </div>
+                            <div class="col-md-6">
+                            <label for="inputCity" class="form-label">Ciudad</label>
+                            <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="col-md-4">
+                            <label for="inputState" class="form-label">País</label>
+                            <select id="inputState" class="form-select">
+                                <option selected>Elegir...</option>
+                                <option>Chile</option>
+                                <option>Argentina</option>
+                                <option>Perú</option>
+                            </select>
+                            </div>
+                            <div class="col-12">
+                            <label for="inputAddress" class="form-label">Con cuanto dinero desea pagar?</label>
+                            <input type="text" class="form-control" id="dinero" >
+                            </div>
+                            <div class="col-12">
+                            <button id="aceptarCompra" type="submit" class="btn btn-primary">Pagar</button>
+                            </div>
+                        </form>
+                        `
+        contenedorPago.appendChild(card);
+        calcularTotal();  
+        open = true;
+        console.log(open)  
+
+    } else {
+        open = true;
+    }
+}
+ */
+/* const contenedorAceptarCompra = document.getElementById("contenedorAceptarCompra");
+
+const aceptarCompra1 = document.getElementById("aceptarCompra");
+
+aceptarCompra1.addEventListener("click", () => {
+    finalizarCompra();
+})
+
+//Función para pagar el carrito de compras: 
+let openAceptar = false;
+const finalizarCompra = () => {
+    if (openAceptar === false) {
+        // Obtener el valor numérico entero de un input
+        var input = document.getElementById("dinero").value;
+        var numero = parseInt(input);
+        if (isNaN(numero)) {
+            alert("El valor ingresado no es un número válido");
+        } else {
+            totalAPagar = totalCompra;
+        }
+        if (numero >= totalAPagar) {
+            vuelto = numero - totalAPagar;
+            const card = document.createElement("div");
+            card.classList.add("col-xl-3", "col-md-6", "col-xs-12");
+            card.innerHTML = `
+                            <div class="card">
+                                <h4>Compra realizada con éxito! </h4>
+                                <h4>Vuelto: ${vuelto} </h4>
+                            </div>
+                            `
+            contenedorAceptarCompra.appendChild(card);
+            eliminarTodoElCarrito();  
+            open = true;
+        }else {
+            const card = document.createElement("div");
+            card.classList.add("col-xl-3", "col-md-6", "col-xs-12");
+            card.innerHTML = `
+                            <div class="card">
+                                <h4>No tienes dinero suficiente...</h4>
+                                
+                            </div>
+                            `
+            contenedorAceptarCompra.appendChild(card);
+            
+            open = true;
+        }
+    } else {
+        openAceptar = true;
+    }
+} */
+
